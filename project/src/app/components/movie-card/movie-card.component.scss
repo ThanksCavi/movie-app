@@ -1,0 +1,119 @@
+$dark: #111;
+$light: #f5f5f5;
+$accent: palevioletred;
+
+.movie-card {
+    max-width: 240px;
+    aspect-ratio: 2/3;
+
+    // Layout
+    &__container {
+        border-radius: 10px;
+    
+        background-color: $dark;
+        box-shadow: 0 0 10px rgba($dark, 10%);
+        color: $light;
+    }
+
+    // Poster
+    &__poster {
+        border-radius: inherit;
+        overflow: hidden;
+
+        // Picture
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            vertical-align: middle;
+            border-radius: inherit;
+
+            // Hover
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        // Overlay
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            border-radius: inherit;
+
+            background: linear-gradient(0deg, rgba($dark, 80%) 0%, rgba($dark, 0) 100%);
+        }
+    }
+
+    // Content
+    position: relative;
+    &__content {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        padding: 10px;
+    }
+
+    // Icon Group
+    &__icon-group {
+        display: flex;
+        align-self: flex-end;
+        gap: 8px;
+    }
+
+    // Icon
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 28px;
+        height: 28px;
+
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        color: $light;
+
+        // Hover
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+        span {
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        &:hover {
+            span {
+                transform: scale(1.1);
+                color: $accent;
+            }
+        }
+    }
+
+    // Hover
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &:hover {
+        .movie-card__poster img {
+            transform: scale(1.05);
+            filter: saturate(1.1); 
+        }
+    }
+}

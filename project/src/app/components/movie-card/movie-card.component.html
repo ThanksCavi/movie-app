@@ -1,0 +1,29 @@
+<article class="movie-card">
+    <a class="movie-card__container" href="#">
+
+        <!-- Poster -->
+        <figure class="movie-card__poster">
+            <img [src]="data.poster" [alt]="data.title">
+        </figure>
+
+        <!-- Content -->
+        <div class="movie-card__content">
+            <!-- Title -->
+            <h2 class="movie-card__title"> {{data.title}} </h2>
+
+            <!-- Details -->
+            <p class="movie-card__rating">Rating:  {{data.rating}} </p>
+            <p class="movie-card__description"> {{data.description}} </p>
+
+            <!-- Buttons -->
+            <div class="movie-card__icon-group">
+                <button class="movie-card__icon movie-card__icon-favourite" (click)="addToFavourites()">
+                    <span class="material-icons">favorite</span>
+                  </button>
+                  <button class="movie-card__icon movie-card__icon-watchlist" (click)="addToWatchList()">
+                    <span class="material-icons">watch_later</span>
+                  </button>
+            </div>
+        </div>
+    </a>
+</article>
