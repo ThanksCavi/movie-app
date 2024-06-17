@@ -16,6 +16,7 @@ export class MovieListComponent {
   favourites: any[] = [];
   watchList: any[] = [];
 
+
   handleAddFavourite(movie: any) {
     if (!this.favourites.some(fav => fav.id === movie.id)) {
       this.favourites.push(movie);
