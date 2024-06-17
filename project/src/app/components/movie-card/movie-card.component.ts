@@ -1,10 +1,9 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-movie-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './movie-card.component.html',
   styleUrls: ['./movie-card.component.scss']
 })
@@ -15,11 +14,9 @@ export class MovieCardComponent {
 
   addToFavourites() {
     this.addFavourite.emit();
-    //console.log('Added to favourites');
   }
 
   addToWatchList() {
     this.addWatchList.emit();
-    //console.log('Added to watch list');
   }
 }
