@@ -2,44 +2,49 @@
   <!-- Movies -->
   <div class="movie-list movie-list__movies">
     <h2 class="movie-list__title">Вибір для кіноманів</h2>
-    <div class="movie-list__grid">
-      <ng-container *ngFor="let movie of movies">
-        <app-movie-card 
-          [data]="movie" 
-          (addFavourite)="handleAddFavourite(movie)" 
-          (addWatchList)="handleAddWatchList(movie)">
+    <div class="movie-list__grid scroll-container">
+      @for (movie of movies; track movie) {
+        <app-movie-card
+          [data]="movie"
+          (addFavourite)="handleAddFavourite(movie)"
+          (addWatchList)="handleAddWatchList(movie)"
+          >
         </app-movie-card>
-      </ng-container>
+      }
     </div>
   </div>
 
   <!-- Favourites -->
-  <div *ngIf="favourites.length" class="movie-list movie-list__favourites">
-    <h2 class="movie-list__title">Улюблене</h2>
-    <div class="movie-list__grid">
-      <ng-container *ngFor="let movie of favourites">
-        <app-movie-card 
-          [data]="movie" 
-          (addFavourite)="handleAddFavourite(movie)" 
-          (addWatchList)="handleAddWatchList(movie)">
-        </app-movie-card>
-      </ng-container>
+  @if (favourites.length) {
+    <div class="movie-list movie-list__favourites">
+      <h2 class="movie-list__title">Улюблене</h2>
+      <div class="movie-list__grid">
+        @for (movie of favourites; track movie) {
+          <app-movie-card
+            [data]="movie"
+            (addFavourite)="handleAddFavourite(movie)"
+            (addWatchList)="handleAddWatchList(movie)"
+            >
+          </app-movie-card>
+        }
+      </div>
     </div>
-  </div>
+  }
 
-   <!-- Watchlist -->
-   <div *ngIf="watchList.length" class="movie-list movie-list__watchlist">
-    <h2 class="movie-list__title">Подивитись</h2>
-    <div class="movie-list__grid">
-      <ng-container *ngFor="let movie of watchList">
-        <app-movie-card 
-          [data]="movie" 
-          (addFavourite)="handleAddFavourite(movie)" 
-          (addWatchList)="handleAddWatchList(movie)">
-        </app-movie-card>
-      </ng-container>
+  <!-- Watchlist -->
+  @if (watchList.length) {
+    <div class="movie-list movie-list__watchlist">
+      <h2 class="movie-list__title">Подивитись</h2>
+      <div class="movie-list__grid">
+        @for (movie of watchList; track movie) {
+          <app-movie-card
+            [data]="movie"
+            (addFavourite)="handleAddFavourite(movie)"
+            (addWatchList)="handleAddWatchList(movie)"
+            >
+          </app-movie-card>
+        }
+      </div>
     </div>
-  </div>
+  }
 </div>
-
-

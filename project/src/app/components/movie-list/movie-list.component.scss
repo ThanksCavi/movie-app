@@ -1,15 +1,23 @@
-
 .movie-list {
-    width: 90%; // !! Move to Global Container
-    margin: 50px auto; // !! Move to Global Container
+  max-width: 1680px; // !! Move to Global Container
+  width: 90%; // !! Move to Global Container
+  margin: 50px auto; // !! Move to Global Container
 
-    &__grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
+  padding-bottom: 10px;
 
-        &:not(:last-child) {
-            margin-bottom: 40px;
-        }
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+
+    &.scroll-container {
+      flex-wrap: nowrap;
     }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #333
+  }
+  
 }
