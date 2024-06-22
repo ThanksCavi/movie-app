@@ -1,9 +1,10 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { RoundPipe } from '../../shared/pipes/round-pipe/round.pipe';
 
 @Component({
   selector: 'app-movie-card',
   standalone: true,
-  imports: [],
+  imports: [RoundPipe],
   templateUrl: './movie-card.component.html',
   styleUrls: ['./movie-card.component.scss']
 })

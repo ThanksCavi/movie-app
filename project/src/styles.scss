@@ -1,20 +1,60 @@
+$dark: #111;
+$light: #f5f5f5;
+$accent: palevioletred;
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-$app-background-color: #2d2d2d;
+$app-background-color: #1f1f1f;
 $app-text-color: rgba(255, 255, 255, 0.92);
+
+html,
+body {
+  min-height: 100%;
+}
 
 body {
   background-color: $app-background-color;
   color: $app-text-color;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// Scrollbar
+.scroll-container {
+  overflow-x: auto;
+  padding-bottom: 12px;
+  flex-wrap: nowrap;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: inherit;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  &:focus::-webkit-scrollbar-thumb,
+  &:active::-webkit-scrollbar-thumb,
+  &:hover::-webkit-scrollbar-thumb {
+    background: rgba($accent, 25%);
+  }
+}
