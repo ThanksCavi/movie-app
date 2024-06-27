@@ -3,7 +3,7 @@
   <div class="movie-list movie-list__movies">
     <h2 class="movie-list__title">Вибір для кіноманів</h2>
     <div class="movie-list__grid scroll-container">
-      @for (movie of movies; track movie) {
+      @for (movie of movies; track movie.id) {
         <app-movie-card
           [data]="movie"
           (addFavourite)="handleAddFavourite(movie)"
@@ -19,7 +19,7 @@
     <div class="movie-list movie-list__favourites">
       <h2 class="movie-list__title">Улюблене</h2>
       <div class="movie-list__grid">
-        @for (movie of favourites; track movie) {
+        @for (movie of favourites; track movie.id) {
           <app-movie-card
             [data]="movie"
             (addFavourite)="handleAddFavourite(movie)"
@@ -36,7 +36,7 @@
     <div class="movie-list movie-list__watchlist">
       <h2 class="movie-list__title">Подивитись</h2>
       <div class="movie-list__grid">
-        @for (movie of watchList; track movie) {
+        @for (movie of watchList; track movie.id) {
           <app-movie-card
             [data]="movie"
             (addFavourite)="handleAddFavourite(movie)"
