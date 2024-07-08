@@ -1,44 +1,70 @@
-$dark: #111;
-$light: #f5f5f5;
-$accent: palevioletred;
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+::ng-deep {
+  .p-card {
+    background-color: transparent;
+    box-shadow: none;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .movie-card__tooltip {
+    border-radius: 5px;
+    margin-top: 16px;
+
+    .p-tooltip-text {
+      background-color: $dark;
+      color: $light;
+      font-weight: 400;
+      font-size: 10px;
+      letter-spacing: 0.015em;
+      padding: 0 6px;
+    }
+
+    .p-tooltip-arrow {
+      border-color: transparent transparent $dark transparent;
+      z-index: -1;
+    }
+  }
+}
 
 .movie-card {
-  width: 256px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-  // Poster
   &__poster {
     border-radius: 10px;
     background-color: $dark;
     box-shadow: 0 0 10px rgba($dark, 10%);
     color: $light;
-
     overflow: hidden;
     width: 100%;
-    aspect-ratio: 1.8;
+    aspect-ratio: 1.78;
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-    // Picture
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       vertical-align: middle;
       border-radius: inherit;
-
-      // Hover
       transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
-    // Overlay
-    position: relative;
-    z-index: 1;
     &::before {
       content: "";
       position: absolute;
@@ -49,9 +75,7 @@ $accent: palevioletred;
       left: 0;
       right: 0;
       bottom: 0;
-
       border-radius: inherit;
-
       background: linear-gradient(
         0deg,
         rgba($dark, 80%) 0%,
@@ -60,96 +84,56 @@ $accent: palevioletred;
     }
   }
 
-  // Details
   &__details {
     position: absolute;
     z-index: 3;
     left: 0;
     right: 0;
     bottom: 0;
-
     padding: 10px;
-  }
-
-  // Details
-  &__details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
   }
 
-  // Icon Group
-  &__icon-group {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8px;
+  &__rating {
+    font-size: 14px;
   }
 
-  // Icon
-  &__icon {
+  &__title {
+    a {
+      margin-top: 4px;
+      text-decoration: none;
+      color: $light;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      font-size: clampFunction(14, 13);
+      line-height: 1.2;
+    }
+  }
+
+  &__meta {
     display: flex;
     align-items: center;
-    justify-content: center;
+    font-size: 12px;
+    color: $secondary-text-color;
+    margin-top: 4px;
 
-    width: 20px;
-    height: 20px;
-
-    background-color: transparent;
-    box-shadow: none;
-    border: none;
-    color: $light;
-
-    // Hover
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-    span {
-      font-size: 20px;
-      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    &:hover {
-      span {
-        transform: scale(1.1);
-        color: $accent;
+    &-item {
+      &:not(:last-child) {
+        &::after {
+          content: "•";
+          margin: 0 4px;
+        }
       }
     }
   }
-
-  // Rating
-  &__rating {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  // Title
-  &__title a {
-    text-decoration: none;
-    color: $light;
-    font-weight: 400;
-
-    font-size: 14px;
-    line-height: 1.4em;
-    min-height: 2.8em;
-
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  // Hover
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   &:hover {
     .movie-card__poster img {
       transform: scale(1.05);
       filter: saturate(1.1);
     }
-  }
+  } 
 }

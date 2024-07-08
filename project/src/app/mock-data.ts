@@ -2,13 +2,7 @@ export const nowPlayingMovies = [
     {
         "adult": false,
         "backdrop_path": "/coATv42PoiLqAFKStJiMZs2r6Zb.jpg",
-        "genre_ids": [
-            16,
-            10751,
-            18,
-            12,
-            35
-        ],
+        "genre_ids": [16, 10751, 18, 12, 35],
         "id": 1022789,
         "original_language": "en",
         "original_title": "Inside Out 2",
@@ -19,16 +13,13 @@ export const nowPlayingMovies = [
         "title": "Inside Out 2",
         "video": false,
         "vote_average": 7.763,
-        "vote_count": 226
+        "vote_count": 226,
+        "genre": "Comedy"
     },
     {
         "adult": false,
         "backdrop_path": "/fqv8v6AycXKsivp1T5yKtLbGXce.jpg",
-        "genre_ids": [
-            878,
-            12,
-            28
-        ],
+        "genre_ids": [878, 12, 28],
         "id": 653346,
         "original_language": "en",
         "original_title": "Kingdom of the Planet of the Apes",
@@ -39,17 +30,13 @@ export const nowPlayingMovies = [
         "title": "Kingdom of the Planet of the Apes",
         "video": false,
         "vote_average": 6.824,
-        "vote_count": 1079
+        "vote_count": 1079,
+        "genre": "Sci-Fi"
     },
     {
         "adult": false,
         "backdrop_path": "/hliXekHv7xc2cgXnMBLlp4Eihq8.jpg",
-        "genre_ids": [
-            53,
-            27,
-            28,
-            9648
-        ],
+        "genre_ids": [53, 27, 28, 9648],
         "id": 1001311,
         "original_language": "fr",
         "original_title": "Sous la Seine",
@@ -60,17 +47,13 @@ export const nowPlayingMovies = [
         "title": "Under Paris",
         "video": false,
         "vote_average": 5.818,
-        "vote_count": 535
+        "vote_count": 535,
+        "genre": "Thriller"
     },
     {
         "adult": false,
         "backdrop_path": "/gRApXuxWmO2forYTuTmcz5RaNUV.jpg",
-        "genre_ids": [
-            28,
-            80,
-            53,
-            35
-        ],
+        "genre_ids": [28, 80, 53, 35],
         "id": 573435,
         "original_language": "en",
         "original_title": "Bad Boys: Ride or Die",
@@ -81,16 +64,13 @@ export const nowPlayingMovies = [
         "title": "Bad Boys: Ride or Die",
         "video": false,
         "vote_average": 7.066,
-        "vote_count": 305
+        "vote_count": 305,
+        "genre": "Action"
     },
     {
         "adult": false,
         "backdrop_path": "/z121dSTR7PY9KxKuvwiIFSYW8cf.jpg",
-        "genre_ids": [
-            10752,
-            28,
-            18
-        ],
+        "genre_ids": [10752, 28, 18],
         "id": 929590,
         "original_language": "en",
         "original_title": "Civil War",
@@ -101,33 +81,30 @@ export const nowPlayingMovies = [
         "title": "Civil War",
         "video": false,
         "vote_average": 7,
-        "vote_count": 1580
+        "vote_count": 1580,
+        "genre": "Drama"
     },
     {
         "adult": false,
         "backdrop_path": "/9Or1qeUZyOSQVglRXGnqc6owp21.jpg",
-        "genre_ids": [
-            28
-        ],
+        "genre_ids": [28],
         "id": 1115623,
         "original_language": "en",
         "original_title": "The Last Kumite",
-        "overview": "When Karate champion Michael Rivers wins the last tournament of his career, shady businessman Ron Hall offers him the opportunity to fight in an illegal Kumite in Bulgaria against the world’s best martial artists.  When Michael declines, Hall has his daughter kidnapped and, in order to rescue her, Rivers is left with no choice but to compete in the deadly tournament. Arriving in Bulgaria, he finds out that he is not the only fighter whose loved one was taken. Rivers enlists the help of trainers Master Loren, and Julie Jackson but will it be enough for him to win the tournament and save his daughter’s life?",
+        "overview": "When Karate champion Michael Rivers wins the last tournament of his career, shady businessman Ron Hall offers him the opportunity to fight in an illegal Kumite in Bulgaria against the world’s best martial artists. When Michael declines, Hall has his daughter kidnapped and, in order to rescue her, Rivers is left with no choice but to compete in the deadly tournament. Arriving in Bulgaria, he finds out that he is not the only fighter whose loved one was taken. Rivers enlists the help of trainers Master Loren, and Julie Jackson but will it be enough for him to win the tournament and save his daughter’s life?",
         "popularity": 1246.18,
         "poster_path": "/zDkaJgsPoSqa2cMe2hW2HAfyWwO.jpg",
         "release_date": "2024-05-09",
         "title": "The Last Kumite",
         "video": false,
         "vote_average": 5.467,
-        "vote_count": 15
+        "vote_count": 15,
+        "genre": "Action"
     },
     {
         "adult": false,
         "backdrop_path": "/3TNSoa0UHGEzEz5ndXGjJVKo8RJ.jpg",
-        "genre_ids": [
-            878,
-            28
-        ],
+        "genre_ids": [878, 28],
         "id": 614933,
         "original_language": "en",
         "original_title": "Atlas",
@@ -138,125 +115,13 @@ export const nowPlayingMovies = [
         "title": "Atlas",
         "video": false,
         "vote_average": 6.769,
-        "vote_count": 794
-    },
-]
-
-export const popularMovies = [
-    {
-        "adult": false,
-        "backdrop_path": "/coATv42PoiLqAFKStJiMZs2r6Zb.jpg",
-        "genre_ids": [
-            16,
-            10751,
-            18,
-            12,
-            35
-        ],
-        "id": 1022789,
-        "original_language": "en",
-        "original_title": "Inside Out 2",
-        "overview": "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.",
-        "popularity": 9750.804,
-        "poster_path": "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
-        "release_date": "2024-06-11",
-        "title": "Inside Out 2",
-        "video": false,
-        "vote_average": 7.818,
-        "vote_count": 233
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/fqv8v6AycXKsivp1T5yKtLbGXce.jpg",
-        "genre_ids": [
-            878,
-            12,
-            28
-        ],
-        "id": 653346,
-        "original_language": "en",
-        "original_title": "Kingdom of the Planet of the Apes",
-        "overview": "Several generations in the future following Caesar's reign, apes are now the dominant species and live harmoniously while humans have been reduced to living in the shadows. As a new tyrannical ape leader builds his empire, one young ape undertakes a harrowing journey that will cause him to question all that he has known about the past and to make choices that will define a future for apes and humans alike.",
-        "popularity": 4014.879,
-        "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
-        "release_date": "2024-05-08",
-        "title": "Kingdom of the Planet of the Apes",
-        "video": false,
-        "vote_average": 6.842,
-        "vote_count": 1090
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/hliXekHv7xc2cgXnMBLlp4Eihq8.jpg",
-        "genre_ids": [
-            53,
-            27,
-            28,
-            9648
-        ],
-        "id": 1001311,
-        "original_language": "fr",
-        "original_title": "Sous la Seine",
-        "overview": "In the Summer of 2024, Paris is hosting the World Triathlon Championships on the Seine for the first time. Sophia, a brilliant scientist, learns from Mika, a young environmental activist, that a large shark is swimming deep in the river. To avoid a bloodbath at the heart of the city, they have no choice but to join forces with Adil, the Seine river police commander.",
-        "popularity": 2822.686,
-        "poster_path": "/qZPLK5ktRKa3CL4sKRZtj8UlPYc.jpg",
-        "release_date": "2024-06-05",
-        "title": "Under Paris",
-        "video": false,
-        "vote_average": 5.838,
-        "vote_count": 542
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/gRApXuxWmO2forYTuTmcz5RaNUV.jpg",
-        "genre_ids": [
-            28,
-            80,
-            53,
-            35
-        ],
-        "id": 573435,
-        "original_language": "en",
-        "original_title": "Bad Boys: Ride or Die",
-        "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
-        "popularity": 2744.583,
-        "poster_path": "/nP6RliHjxsz4irTKsxe8FRhKZYl.jpg",
-        "release_date": "2024-06-05",
-        "title": "Bad Boys: Ride or Die",
-        "video": false,
-        "vote_average": 7.1,
-        "vote_count": 312
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/j29ekbcLpBvxnGk6LjdTc2EI5SA.jpg",
-        "genre_ids": [
-            16,
-            10751,
-            12,
-            18,
-            35
-        ],
-        "id": 150540,
-        "original_language": "en",
-        "original_title": "Inside Out",
-        "overview": "From an adventurous balloon ride above the clouds to a monster-filled metropolis, Academy Award®-winning director Pete Docter (“Monsters, Inc.,” “Up”) has taken audiences to unique and imaginative places. In Disney and Pixar’s original movie “ Inside Out,” he will take us to the most extraordinary location of all—inside the mind.",
-        "popularity": 2731.637,
-        "poster_path": "/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
-        "release_date": "2015-06-17",
-        "title": "Inside Out",
-        "video": false,
-        "vote_average": 7.916,
-        "vote_count": 20603
+        "vote_count": 794,
+        "genre": "Sci-Fi"
     },
     {
         "adult": false,
         "backdrop_path": "/veIyxxi5Gs8gvztLEW1Ysb8rrzs.jpg",
-        "genre_ids": [
-            878,
-            28,
-            12
-        ],
+        "genre_ids": [878, 28, 12],
         "id": 823464,
         "original_language": "en",
         "original_title": "Godzilla x Kong: The New Empire",
@@ -267,16 +132,152 @@ export const popularMovies = [
         "title": "Godzilla x Kong: The New Empire",
         "video": false,
         "vote_average": 7.218,
-        "vote_count": 2804
+        "vote_count": 2804,
+        "genre": "Sci-Fi"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg",
+        "genre_ids": [10752, 28, 18],
+        "id": 929590,
+        "original_language": "en",
+        "original_title": "Civil War",
+        "overview": "In the near future, a group of war journalists attempt to survive while reporting the truth as the United States stands on the brink of civil war.",
+        "popularity": 1707.985,
+        "poster_path": "/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg",
+        "release_date": "2024-04-10",
+        "title": "Civil War",
+        "video": false,
+        "vote_average": 7,
+        "vote_count": 1580,
+        "genre": "Drama"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/nP6RliHjxsz4irTKsxe8FRhKZYl.jpg",
+        "genre_ids": [28, 80, 53, 35],
+        "id": 573435,
+        "original_language": "en",
+        "original_title": "Bad Boys: Ride or Die",
+        "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+        "popularity": 2744.583,
+        "poster_path": "/nP6RliHjxsz4irTKsxe8FRhKZYl.jpg",
+        "release_date": "2024-06-05",
+        "title": "Bad Boys: Ride or Die",
+        "video": false,
+        "vote_average": 7.066,
+        "vote_count": 305,
+        "genre": "Action"
+    }
+];
+
+export const popularMovies = [
+    {
+        "adult": false,
+        "backdrop_path": "/coATv42PoiLqAFKStJiMZs2r6Zb.jpg",
+        "genre_ids": [16, 10751, 18, 12, 35],
+        "id": 1022789,
+        "original_language": "en",
+        "original_title": "Inside Out 2",
+        "overview": "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.",
+        "popularity": 9750.804,
+        "poster_path": "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
+        "release_date": "2024-06-11",
+        "title": "Inside Out 2",
+        "video": false,
+        "vote_average": 7.818,
+        "vote_count": 233,
+        "genre": "Comedy"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/fqv8v6AycXKsivp1T5yKtLbGXce.jpg",
+        "genre_ids": [878, 12, 28],
+        "id": 653346,
+        "original_language": "en",
+        "original_title": "Kingdom of the Planet of the Apes",
+        "overview": "Several generations in the future following Caesar's reign, apes are now the dominant species and live harmoniously while humans have been reduced to living in the shadows. As a new tyrannical ape leader builds his empire, one young ape undertakes a harrowing journey that will cause him to question all that he has known about the past and to make choices that will define a future for apes and humans alike.",
+        "popularity": 4014.879,
+        "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
+        "release_date": "2024-05-08",
+        "title": "Kingdom of the Planet of the Apes",
+        "video": false,
+        "vote_average": 6.842,
+        "vote_count": 1090,
+        "genre": "Sci-Fi"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/hliXekHv7xc2cgXnMBLlp4Eihq8.jpg",
+        "genre_ids": [53, 27, 28, 9648],
+        "id": 1001311,
+        "original_language": "fr",
+        "original_title": "Sous la Seine",
+        "overview": "In the Summer of 2024, Paris is hosting the World Triathlon Championships on the Seine for the first time. Sophia, a brilliant scientist, learns from Mika, a young environmental activist, that a large shark is swimming deep in the river. To avoid a bloodbath at the heart of the city, they have no choice but to join forces with Adil, the Seine river police commander.",
+        "popularity": 2822.686,
+        "poster_path": "/qZPLK5ktRKa3CL4sKRZtj8UlPYc.jpg",
+        "release_date": "2024-06-05",
+        "title": "Under Paris",
+        "video": false,
+        "vote_average": 5.838,
+        "vote_count": 542,
+        "genre": "Thriller"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/gRApXuxWmO2forYTuTmcz5RaNUV.jpg",
+        "genre_ids": [28, 80, 53, 35],
+        "id": 573435,
+        "original_language": "en",
+        "original_title": "Bad Boys: Ride or Die",
+        "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+        "popularity": 2744.583,
+        "poster_path": "/nP6RliHjxsz4irTKsxe8FRhKZYl.jpg",
+        "release_date": "2024-06-05",
+        "title": "Bad Boys: Ride or Die",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 312,
+        "genre": "Action"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/j29ekbcLpBvxnGk6LjdTc2EI5SA.jpg",
+        "genre_ids": [16, 10751, 12, 18, 35],
+        "id": 150540,
+        "original_language": "en",
+        "original_title": "Inside Out",
+        "overview": "From an adventurous balloon ride above the clouds to a monster-filled metropolis, Academy Award®-winning director Pete Docter (“Monsters, Inc.,” “Up”) has taken audiences to unique and imaginative places. In Disney and Pixar’s original movie “ Inside Out,” he will take us to the most extraordinary location of all—inside the mind.",
+        "popularity": 2731.637,
+        "poster_path": "/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+        "release_date": "2015-06-17",
+        "title": "Inside Out",
+        "video": false,
+        "vote_average": 7.916,
+        "vote_count": 20603,
+        "genre": "Comedy"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/veIyxxi5Gs8gvztLEW1Ysb8rrzs.jpg",
+        "genre_ids": [878, 28, 12],
+        "id": 823464,
+        "original_language": "en",
+        "original_title": "Godzilla x Kong: The New Empire",
+        "overview": "Following their explosive showdown, Godzilla and Kong must reunite against a colossal undiscovered threat hidden within our world, challenging their very existence – and our own.",
+        "popularity": 2007.024,
+        "poster_path": "/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg",
+        "release_date": "2024-03-27",
+        "title": "Godzilla x Kong: The New Empire",
+        "video": false,
+        "vote_average": 7.218,
+        "vote_count": 2804,
+        "genre": "Sci-Fi"
     },
     {
         "adult": false,
         "backdrop_path": "/z121dSTR7PY9KxKuvwiIFSYW8cf.jpg",
-        "genre_ids": [
-            10752,
-            28,
-            18
-        ],
+        "genre_ids": [10752, 28, 18],
         "id": 929590,
         "original_language": "en",
         "original_title": "Civil War",
@@ -287,17 +288,13 @@ export const popularMovies = [
         "title": "Civil War",
         "video": false,
         "vote_average": 7.02,
-        "vote_count": 1587
+        "vote_count": 1587,
+        "genre": "Drama"
     },
     {
         "adult": false,
         "backdrop_path": "/vblTCXOWUQGSc837vgbhDRi4HSc.jpg",
-        "genre_ids": [
-            28,
-            80,
-            35,
-            53
-        ],
+        "genre_ids": [28, 80, 35, 53],
         "id": 955555,
         "original_language": "ko",
         "original_title": "범죄도시3",
@@ -308,18 +305,50 @@ export const popularMovies = [
         "title": "The Roundup: No Way Out",
         "video": false,
         "vote_average": 7.123,
-        "vote_count": 272
+        "vote_count": 272,
+        "genre": "Action"
     },
-]
+    {
+        "adult": false,
+        "backdrop_path": "/uaSIzbRfwLidxRNMvdZAUwW3vtL.jpg",
+        "genre_ids": [28, 14, 10752],
+        "id": 856289,
+        "original_language": "zh",
+        "original_title": "封神第一部：朝歌风云",
+        "overview": "Based on the most well-known classical fantasy novel of China, Fengshenyanyi, the trilogy is a magnificent eastern high fantasy epic that recreates the prolonged mythical wars between humans, immortals and monsters, which happened more than three thousand years ago.",
+        "popularity": 234.995,
+        "poster_path": "/1v5ZteB49M0RUGYrf9R37Mz8yo2.jpg",
+        "release_date": "2023-07-20",
+        "title": "Creation of the Gods I: Kingdom of Storms",
+        "video": false,
+        "vote_average": 7,
+        "vote_count": 287,
+        "genre": "Fantasy"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/9Or1qeUZyOSQVglRXGnqc6owp21.jpg",
+        "genre_ids": [28],
+        "id": 1115623,
+        "original_language": "en",
+        "original_title": "The Last Kumite",
+        "overview": "When Karate champion Michael Rivers wins the last tournament of his career, shady businessman Ron Hall offers him the opportunity to fight in an illegal Kumite in Bulgaria against the world’s best martial artists. When Michael declines, Hall has his daughter kidnapped and, in order to rescue her, Rivers is left with no choice but to compete in the deadly tournament. Arriving in Bulgaria, he finds out that he is not the only fighter whose loved one was taken. Rivers enlists the help of trainers Master Loren, and Julie Jackson but will it be enough for him to win the tournament and save his daughter’s life?",
+        "popularity": 1246.18,
+        "poster_path": "/zDkaJgsPoSqa2cMe2hW2HAfyWwO.jpg",
+        "release_date": "2024-05-09",
+        "title": "The Last Kumite",
+        "video": false,
+        "vote_average": 5.467,
+        "vote_count": 15,
+        "genre": "Action"
+    }
+];
 
 export const topRatedMovies = [
     {
         "adult": false,
         "backdrop_path": "/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
-        "genre_ids": [
-            18,
-            80
-        ],
+        "genre_ids": [18, 80],
         "id": 278,
         "original_language": "en",
         "original_title": "The Shawshank Redemption",
@@ -330,15 +359,13 @@ export const topRatedMovies = [
         "title": "The Shawshank Redemption",
         "video": false,
         "vote_average": 8.705,
-        "vote_count": 26320
+        "vote_count": 26320,
+        "genre": "Drama"
     },
     {
         "adult": false,
         "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
-        "genre_ids": [
-            18,
-            80
-        ],
+        "genre_ids": [18, 80],
         "id": 238,
         "original_language": "en",
         "original_title": "The Godfather",
@@ -349,15 +376,13 @@ export const topRatedMovies = [
         "title": "The Godfather",
         "video": false,
         "vote_average": 8.694,
-        "vote_count": 19963
+        "vote_count": 19963,
+        "genre": "Drama"
     },
     {
         "adult": false,
         "backdrop_path": "/b6w7gKLQLS2zw4JK0XmKgQ4gnzr.jpg",
-        "genre_ids": [
-            18,
-            80
-        ],
+        "genre_ids": [18, 80],
         "id": 240,
         "original_language": "en",
         "original_title": "The Godfather Part II",
@@ -368,16 +393,13 @@ export const topRatedMovies = [
         "title": "The Godfather Part II",
         "video": false,
         "vote_average": 8.6,
-        "vote_count": 12055
+        "vote_count": 12055,
+        "genre": "Drama"
     },
     {
         "adult": false,
         "backdrop_path": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
-        "genre_ids": [
-            18,
-            36,
-            10752
-        ],
+        "genre_ids": [18, 36, 10752],
         "id": 424,
         "original_language": "en",
         "original_title": "Schindler's List",
@@ -388,14 +410,13 @@ export const topRatedMovies = [
         "title": "Schindler's List",
         "video": false,
         "vote_average": 8.568,
-        "vote_count": 15463
+        "vote_count": 15463,
+        "genre": "Drama"
     },
     {
         "adult": false,
         "backdrop_path": "/qqHQsStV6exghCM7zbObuYBiYxw.jpg",
-        "genre_ids": [
-            18
-        ],
+        "genre_ids": [18],
         "id": 389,
         "original_language": "en",
         "original_title": "12 Angry Men",
@@ -406,16 +427,13 @@ export const topRatedMovies = [
         "title": "12 Angry Men",
         "video": false,
         "vote_average": 8.543,
-        "vote_count": 8311
+        "vote_count": 8311,
+        "genre": "Drama"
     },
     {
         "adult": false,
         "backdrop_path": "/90ez6ArvpO8bvpyIngBuwXOqJm5.jpg",
-        "genre_ids": [
-            35,
-            18,
-            10749
-        ],
+        "genre_ids": [35, 18, 10749],
         "id": 19404,
         "original_language": "hi",
         "original_title": "दिलवाले दुल्हनिया ले जायेंगे",
@@ -426,16 +444,13 @@ export const topRatedMovies = [
         "title": "Dilwale Dulhania Le Jayenge",
         "video": false,
         "vote_average": 8.537,
-        "vote_count": 4399
+        "vote_count": 4399,
+        "genre": "Romance"
     },
     {
         "adult": false,
         "backdrop_path": "/mSDsSDwaP3E7dEfUPWy4J0djt4O.jpg",
-        "genre_ids": [
-            16,
-            10751,
-            14
-        ],
+        "genre_ids": [16, 10751, 14],
         "id": 129,
         "original_language": "ja",
         "original_title": "千と千尋の神隠し",
@@ -446,17 +461,13 @@ export const topRatedMovies = [
         "title": "Spirited Away",
         "video": false,
         "vote_average": 8.537,
-        "vote_count": 16027
+        "vote_count": 16027,
+        "genre": "Fantasy"
     },
     {
         "adult": false,
         "backdrop_path": "/dqK9Hag1054tghRQSqLSfrkvQnA.jpg",
-        "genre_ids": [
-            18,
-            28,
-            80,
-            53
-        ],
+        "genre_ids": [18, 28, 80, 53],
         "id": 155,
         "original_language": "en",
         "original_title": "The Dark Knight",
@@ -467,16 +478,13 @@ export const topRatedMovies = [
         "title": "The Dark Knight",
         "video": false,
         "vote_average": 8.516,
-        "vote_count": 32080
+        "vote_count": 32080,
+        "genre": "Action"
     },
     {
         "adult": false,
         "backdrop_path": "/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
-        "genre_ids": [
-            35,
-            53,
-            18
-        ],
+        "genre_ids": [35, 53, 18],
         "id": 496243,
         "original_language": "ko",
         "original_title": "기생충",
@@ -487,16 +495,13 @@ export const topRatedMovies = [
         "title": "Parasite",
         "video": false,
         "vote_average": 8.5,
-        "vote_count": 17646
+        "vote_count": 17646,
+        "genre": "Thriller"
     },
     {
         "adult": false,
         "backdrop_path": "/vxJ08SvwomfKbpboCWynC3uqUg4.jpg",
-        "genre_ids": [
-            14,
-            18,
-            80
-        ],
+        "genre_ids": [14, 18, 80],
         "id": 497,
         "original_language": "en",
         "original_title": "The Green Mile",
@@ -507,9 +512,10 @@ export const topRatedMovies = [
         "title": "The Green Mile",
         "video": false,
         "vote_average": 8.505,
-        "vote_count": 16904
-    },
-]
+        "vote_count": 16904,
+        "genre": "Drama"
+    }
+];
 
 export const upcomingMovies = [
     {
@@ -532,7 +538,8 @@ export const upcomingMovies = [
         "title": "Inside Out 2",
         "video": false,
         "vote_average": 7.866,
-        "vote_count": 242
+        "vote_count": 242,
+        "genre": "Comedy"
     },
     {
         "adult": false,
@@ -553,7 +560,8 @@ export const upcomingMovies = [
         "title": "Bad Boys: Ride or Die",
         "video": false,
         "vote_average": 7.1,
-        "vote_count": 312
+        "vote_count": 312,
+        "genre": "Action"
     },
     {
         "adult": false,
@@ -573,7 +581,8 @@ export const upcomingMovies = [
         "title": "The Watchers",
         "video": false,
         "vote_average": 5.896,
-        "vote_count": 134
+        "vote_count": 134,
+        "genre": "Horror"
     },
     {
         "adult": false,
@@ -593,7 +602,8 @@ export const upcomingMovies = [
         "title": "Hit Man",
         "video": false,
         "vote_average": 7.1,
-        "vote_count": 315
+        "vote_count": 315,
+        "genre": "Comedy"
     },
     {
         "adult": false,
@@ -614,7 +624,8 @@ export const upcomingMovies = [
         "title": "The Garfield Movie",
         "video": false,
         "vote_average": 6.566,
-        "vote_count": 174
+        "vote_count": 174,
+        "genre": "Animation"
     },
     {
         "adult": false,
@@ -634,7 +645,8 @@ export const upcomingMovies = [
         "title": "Immaculate",
         "video": false,
         "vote_average": 6.3,
-        "vote_count": 607
+        "vote_count": 607,
+        "genre": "Horror"
     },
     {
         "adult": false,
@@ -655,7 +667,8 @@ export const upcomingMovies = [
         "title": "Boy Kills World",
         "video": false,
         "vote_average": 6.87,
-        "vote_count": 292
+        "vote_count": 292,
+        "genre": "Action"
     },
     {
         "adult": false,
@@ -676,7 +689,8 @@ export const upcomingMovies = [
         "title": "Mobile Suit Gundam SEED FREEDOM",
         "video": false,
         "vote_average": 6.289,
-        "vote_count": 19
+        "vote_count": 19,
+        "genre": "Animation"
     },
     {
         "adult": false,
@@ -697,7 +711,8 @@ export const upcomingMovies = [
         "title": "Despicable Me 4",
         "video": false,
         "vote_average": 9,
-        "vote_count": 6
+        "vote_count": 6,
+        "genre": "Animation"
     },
     {
         "adult": false,
@@ -716,7 +731,79 @@ export const upcomingMovies = [
         "title": "Chief of Station",
         "video": false,
         "vote_average": 5.357,
-        "vote_count": 49
+        "vote_count": 49,
+        "genre": "Action"
+    }
+];
+
+export const featuredMovies = [
+    {
+        "adult": false,
+        "backdrop_path": "/z121dSTR7PY9KxKuvwiIFSYW8cf.jpg",
+        "genre_ids": [10752, 28, 18],
+        "id": 929590,
+        "original_language": "en",
+        "original_title": "Civil War",
+        "overview": "In the near future, a group of war journalists attempt to survive while reporting the truth as the United States stands on the brink of civil war.",
+        "popularity": 1707.985,
+        "poster_path": "/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg",
+        "release_date": "2024-04-10",
+        "title": "Civil War",
+        "video": false,
+        "vote_average": 7,
+        "vote_count": 1580,
+        "genre": "War"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/fqv8v6AycXKsivp1T5yKtLbGXce.jpg",
+        "genre_ids": [878, 12, 28],
+        "id": 653346,
+        "original_language": "en",
+        "original_title": "Kingdom of the Planet of the Apes",
+        "overview": "Several generations in the future following Caesar's reign, apes are now the dominant species and live harmoniously while humans have been reduced to living in the shadows. As a new tyrannical ape leader builds his empire, one young ape undertakes a harrowing journey that will cause him to question all that he has known about the past and to make choices that will define a future for apes and humans alike.",
+        "popularity": 4014.879,
+        "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
+        "release_date": "2024-05-08",
+        "title": "Kingdom of the Planet of the Apes",
+        "video": false,
+        "vote_average": 6.824,
+        "vote_count": 1079,
+        "genre": "Sci-Fi"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/hliXekHv7xc2cgXnMBLlp4Eihq8.jpg",
+        "genre_ids": [53, 27, 28, 9648],
+        "id": 1001311,
+        "original_language": "fr",
+        "original_title": "Sous la Seine",
+        "overview": "In the Summer of 2024, Paris is hosting the World Triathlon Championships on the Seine for the first time. Sophia, a brilliant scientist, learns from Mika, a young environmental activist, that a large shark is swimming deep in the river. To avoid a bloodbath at the heart of the city, they have no choice but to join forces with Adil, the Seine river police commander.",
+        "popularity": 2822.686,
+        "poster_path": "/qZPLK5ktRKa3CL4sKRZtj8UlPYc.jpg",
+        "release_date": "2024-06-05",
+        "title": "Under Paris",
+        "video": false,
+        "vote_average": 5.818,
+        "vote_count": 535,
+        "genre": "Thriller"
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/gRApXuxWmO2forYTuTmcz5RaNUV.jpg",
+        "genre_ids": [28, 80, 53, 35],
+        "id": 573435,
+        "original_language": "en",
+        "original_title": "Bad Boys: Ride or Die",
+        "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+        "popularity": 2744.583,
+        "poster_path": "/nP6RliHjxsz4irTKsxe8FRhKZYl.jpg",
+        "release_date": "2024-06-05",
+        "title": "Bad Boys: Ride or Die",
+        "video": false,
+        "vote_average": 7.066,
+        "vote_count": 305,
+        "genre": "Action"
     },
     {
         "adult": false,
@@ -735,7 +822,8 @@ export const upcomingMovies = [
         "title": "Sting",
         "video": false,
         "vote_average": 6.4,
-        "vote_count": 127
+        "vote_count": 127,
+        "genre": "Horror"
     },
     {
         "adult": false,
@@ -755,6 +843,7 @@ export const upcomingMovies = [
         "title": "Creation of the Gods I: Kingdom of Storms",
         "video": false,
         "vote_average": 7,
-        "vote_count": 287
-    },
-]
+        "vote_count": 287,
+        "genre": "Fantasy"
+    }
+];

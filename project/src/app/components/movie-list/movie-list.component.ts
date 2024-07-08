@@ -1,7 +1,5 @@
-import { Component } from '@angular/core';
-
-import { MovieCardComponent } from '../movie-card/movie-card.component';
-import { popularMovies } from '../../mock-data';
+import { Component, Input } from '@angular/core';
+import { MovieCardComponent } from '@components/movie-card/movie-card.component';
 
 @Component({
   selector: 'app-movie-list',
@@ -11,20 +9,7 @@ import { popularMovies } from '../../mock-data';
   styleUrls: ['./movie-list.component.scss']
 })
 export class MovieListComponent {
-  movies = popularMovies;
-  favourites: any[] = [];
-  watchList: any[] = [];
-
-
-  handleAddFavourite(movie: any) {
-    if (!this.favourites.some(fav => fav.id === movie.id)) {
-      this.favourites.push(movie);
-    }
-  }
-
-  handleAddWatchList(movie: any) {
-    if (!this.watchList.some(watch => watch.id === movie.id)) {
-      this.watchList.push(movie);
-    }
-  }
+  @Input() movies: any[] = [];
+  @Input() title: string = '';
+  @Input() context: 'favourites' | 'watchlist' | 'default' = 'default';
 }

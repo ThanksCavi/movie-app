@@ -1,0 +1,37 @@
+<section class="movie-section main-section">
+  <div class="container">
+    
+    <!-- Watch List -->
+    @if (watchlist.length > 0) {
+
+      <!-- Title H1 -->
+      <h1 class="visually-hidden">Список перегляду</h1>
+
+      <!-- Loop -->
+      <app-movie-list
+        [movies]="watchlist"
+        [title]="'Список перегляду'"
+        [context]="'watchlist'"
+      ></app-movie-list>
+
+    <!-- Empty State -->
+    } @else {
+      <section class="page-empty-state">
+        <div class="page-empty-state__container container-extra-small">
+          <a routerLink="/" class="page-empty-state__logo-link">
+            <img
+              src="./assets/images/bingeberd-logo.svg"
+              alt="bingeberd"
+              class="sidebar__logo-img"
+            />
+          </a>
+          <h1 class="page-empty-state__title">список перегляду</h1>
+          <p class="page-empty-state__description">
+            Ви ще не додали фільми до списку перегляду. Додайте фільми, щоб
+            побачити їх тут.
+          </p>
+        </div>
+      </section>
+    }
+  </div>
+</section>

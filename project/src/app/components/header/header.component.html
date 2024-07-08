@@ -1,1 +1,21 @@
-<header></header>
+<header class="header">
+  <div class="header__container container">
+    <div class="header__open-icon">
+      <i class="pi pi-bars header__menu-icon onTablet" (click)="onToggleSidebar()"></i>
+    </div>
+    <nav class="header__menu">
+      <ul class="header__menu__list menu-list">
+        <li routerLinkActive="active">
+          <a routerLink="/favorites" title="My Favorites">
+            <i class="pi pi-heart"></i>
+          </a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/watchlist" title="Watchlist">
+            <i class="pi pi-list"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

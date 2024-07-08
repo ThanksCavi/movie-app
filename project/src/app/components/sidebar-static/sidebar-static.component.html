@@ -1,0 +1,59 @@
+<div class="sidebar" [class.sidebar--active]="isSidebarActive">
+  <div class="sidebar__header">
+    <a routerLink="/" class="sidebar__logo-link">
+      <img src="./assets/images/bingeberd-icon.svg" alt="bingeberd" class="sidebar__logo-img" />
+      <span>bingbird</span>
+    </a>
+    <div class="sidebar__close">
+      <i class="pi pi-times sidebar__close-icon onTablet" (click)="onToggleSidebar()"></i>
+    </div>
+  </div>
+  <div class="sidebar__search">
+    <i class="pi pi-search sidebar__search-icon"></i>
+    <input pInputText type="text" placeholder="Search" class="sidebar__search-input" />
+  </div>
+  <ul class="sidebar__menu">
+    <li routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }" 
+      (click)="onToggleSidebar()" 
+      class="sidebar__menu-item"
+    >
+      <a routerLink="/" class="sidebar__menu-link">
+        <i class="pi pi-home sidebar__icon"></i>
+        Home
+      </a>
+    </li>
+    <li routerLinkActive="active" (click)="onToggleSidebar()" class="sidebar__menu-item">
+      <a routerLink="/now-playing" class="sidebar__menu-link">
+        <i class="pi pi-play sidebar__icon"></i>
+        Now Playing
+      </a>
+    </li>
+    <li routerLinkActive="active" (click)="onToggleSidebar()" class="sidebar__menu-item">
+      <a routerLink="/popular" class="sidebar__menu-link">
+        <i class="pi pi-sparkles sidebar__icon"></i>
+        Popular
+      </a>
+    </li>
+    <li routerLinkActive="active" (click)="onToggleSidebar()" class="sidebar__menu-item">
+      <a routerLink="/top-rated" class="sidebar__menu-link">
+        <i class="pi pi-trophy sidebar__icon"></i>
+        Top Rated
+      </a>
+    </li>
+    <li routerLinkActive="active" (click)="onToggleSidebar()" class="sidebar__menu-item">
+      <a routerLink="/upcoming" class="sidebar__menu-link">
+        <i class="pi pi-clock sidebar__icon"></i>
+        Upcoming
+      </a>
+    </li>
+  </ul>
+  <ul class="sidebar__footer">
+    <li routerLinkActive="active" (click)="onToggleSidebar()" class="sidebar__footer-item">
+      <a routerLink="/about" class="sidebar__footer-link">
+        About the App
+        <i class="pi pi-arrow-up-right sidebar__icon sidebar__icon--right"></i>
+      </a>
+    </li>
+  </ul>
+</div>

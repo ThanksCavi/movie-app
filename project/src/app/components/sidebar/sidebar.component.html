@@ -1,1 +1,62 @@
-<p>sidebar works!</p>
+<p-sidebar [(visible)]="visibleSidebar" [styleClass]="'sidebar'">
+  <ng-template pTemplate="header">
+    <div class="sidebar__header">
+      <a routerLink="/" class="sidebar__logo-link">
+        <img src="./assets/images/bingeberd-logo.svg"
+          alt="bingeberd"
+          class="sidebar__logo-img"
+        /><span>bingbird</span>
+      </a>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="content">
+    <div class="sidebar__search">
+      <i class="pi pi-search sidebar__search-icon"></i>
+      <input
+        pInputText
+        type="text"
+        placeholder="Search"
+        class="sidebar__search-input"
+      />
+    </div>
+    <ul class="sidebar__menu">
+      <li routerLinkActive="active" class="sidebar__menu-item">
+        <a routerLink="/now-playing" class="sidebar__menu-link">
+          <i class="pi pi-play sidebar__icon"></i>
+          Now Playing
+        </a>
+      </li>
+      <li routerLinkActive="active" class="sidebar__menu-item">
+        <a routerLink="/popular" class="sidebar__menu-link">
+          <i class="pi pi-sparkles sidebar__icon"></i>
+          Popular
+        </a>
+      </li>
+      <li routerLinkActive="active" class="sidebar__menu-item">
+        <a routerLink="/top-rated" class="sidebar__menu-link">
+          <i class="pi pi-trophy sidebar__icon"></i>
+          Top Rated
+        </a>
+      </li>
+      <li routerLinkActive="active" class="sidebar__menu-item">
+        <a routerLink="/upcoming" class="sidebar__menu-link">
+          <i class="pi pi-clock sidebar__icon"></i>
+          Upcoming
+        </a>
+      </li>
+    </ul>
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <ul class="sidebar__footer">
+      <li class="sidebar__footer-item">
+        <a routerLink="/about" class="sidebar__footer-link">
+          About the App
+          <i
+            class="pi pi-arrow-up-right sidebar__icon sidebar__icon--right"
+          ></i>
+        </a>
+      </li>
+    </ul>
+  </ng-template>
+</p-sidebar>
+<p-button (click)="toggleSidebar()" icon="pi pi-arrow-right"></p-button>

@@ -1,100 +1,119 @@
+@import "styles/_variables.scss";
+@import "styles/_fonts.scss";
+@import "styles/_mixins.scss";
+@import "styles/_layout.scss";
+@import "styles/_scrollbar.scss";
+@import "styles/_empty-state-page.scss";
 
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
-// Plus imports for other components in your app.
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
-@include mat.core();
-
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$project-primary: mat.define-palette(mat.$grey-palette);
-$project-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
-
-// The warn palette is optional (defaults to red).
-$project-warn: mat.define-palette(mat.$red-palette);
-
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$project-theme: mat.define-dark-theme((
-  color: (
-    primary: $project-primary,
-    accent: $project-accent,
-    warn: $project-warn,
-  ),
-  typography: mat.define-typography-config(),
-  density: 0
-));
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include mat.all-component-themes($project-theme);
-
-$dark: mat.get-color-from-palette($project-primary, 900);
-$light: mat.get-color-from-palette($project-primary, 100);
-$accent: mat.get-color-from-palette($project-accent, A200);
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+::selection {
+  background-color: $complementary;
+  color: $light;
 }
 
-$app-background-color: #1f1f1f;
-$app-text-color: rgba(255, 255, 255, 0.92);
-
-html,
-body {
-  min-height: 100%;
-}
-
+// Appereance
 body {
   background-color: $app-background-color;
-  color: $app-text-color;
+  color: $primary-text-color;
 
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: clampFunction(76, 34);
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h2 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: clampFunction(54, 28);
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 0.85em;
+  margin-bottom: 0.25em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h3 {
+  // font-family: "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: clampFunction(42, 24);
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  margin-bottom: 1em;
+}
+
+p,
+a {
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
 }
 
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+a {
+  color: $accent;
+  text-decoration: none;
 
-// Scrollbar
-.scroll-container {
-  overflow-x: auto;
-  padding-bottom: 12px;
-  flex-wrap: nowrap;
-
-  &::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-    cursor: pointer;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: inherit;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    border-radius: 0;
-    background: transparent;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-
-  &:focus::-webkit-scrollbar-thumb,
-  &:active::-webkit-scrollbar-thumb,
-  &:hover::-webkit-scrollbar-thumb {
-    background: rgba($accent, 50%);
+  &:hover {
+    text-decoration: underline;
   }
 }
 
-html, body { min-height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.menu-list {
+  list-style-type: none;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+// Rating
+.module-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  line-height: 1.2em;
+
+  .pi {
+    font-size: 0.7em;
+    color: darkgoldenrod;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+@include desktop {
+  .onTablet {
+    display: none;
+  }
+}

@@ -1,23 +1,22 @@
-.movie-list {
-  max-width: 1680px; // !! Move to Global Container
-  width: 90%; // !! Move to Global Container
-  margin: 50px auto; // !! Move to Global Container
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
 
-  padding-bottom: 10px;
+.movie-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &__title {
+    margin-bottom: 0.65em;
+  }
 
   &__grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 28px;
-
-    &.scroll-container {
-      flex-wrap: nowrap;
-    }
+    @include grid(5, $media: 480);
+    @include gridMediaQueries(4, $point: 1600, $media: 480);
+    @include gridMediaQueries(3, $point: 1366, $media: 480);
+    @include gridMediaQueries(2, $point: 768, $media: 480);
   }
 
   &:not(:last-child) {
-    margin-bottom: 50px;
-    border-bottom: 1px solid #333
+    border-bottom: 1px solid rgba($light, 0.1);
   }
-  
 }
