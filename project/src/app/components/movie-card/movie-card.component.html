@@ -1,29 +1,50 @@
-<article class="movie-card">
-    <a class="movie-card__container" href="#">
+<p-card class="movie-card" (click)="navigateToDetails()">
 
-        <!-- Poster -->
-        <figure class="movie-card__poster">
-            <img [src]="data.poster" [alt]="data.title">
-        </figure>
+  <!-- Body -->
+ <ng-template pTemplate="content">
+   <div class="movie-card__poster">
 
-        <!-- Content -->
-        <div class="movie-card__content">
-            <!-- Title -->
-            <h2 class="movie-card__title"> {{data.title}} </h2>
+     <!-- Poster -->
+     <img [src]="'https://image.tmdb.org/t/p/w500' + movie.backdrop_path" [alt]="movie.title"/>
 
-            <!-- Details -->
-            <p class="movie-card__rating">Rating:  {{data.rating}} </p>
-            <p class="movie-card__description"> {{data.description}} </p>
+     <!-- Details -->
+     <div class="movie-card__details">
 
-            <!-- Buttons -->
-            <div class="movie-card__icon-group">
-                <button class="movie-card__icon movie-card__icon-favourite" (click)="addToFavourites()">
-                    <span class="material-icons">favorite</span>
-                  </button>
-                  <button class="movie-card__icon movie-card__icon-watchlist" (click)="addToWatchList()">
-                    <span class="material-icons">watch_later</span>
-                  </button>
-            </div>
-        </div>
-    </a>
-</article>
+       <!-- Rating -->
+       <div class="movie-card__rating module-rating">
+         <i class="pi pi-star-fill"></i>
+         {{ movie.vote_average | RoundPipe: 1 }}
+       </div>
+
+       <!-- Icon Group -->
+       <div class="movie-card__icon-group">
+           <app-movie-actions
+             [isFavourite]="isFavourite"
+             [isInWatchlist]="isInWatchlist"
+             [context]="context"
+             [styleContext]="'card'"
+             (favouriteToggled)="toggleFavourite()"
+             (watchlistToggled)="toggleWatchlist()"
+           ></app-movie-actions>
+       </div>
+
+     </div>
+   </div>
+ </ng-template>
+
+ <!-- Footer -->
+ <ng-template pTemplate="footer">
+
+   <!-- Title -->
+   <h3 class="movie-card__title"><a href="javascript:void(0)">{{ movie.title }}</a></h3>
+   
+   <!-- Meta -->
+   <div class="movie-card__meta">
+     <!-- Date -->
+     <div class="movie-card__meta-item movie-card__meta-date">{{ movie.release_date | date : "yyyy" }}</div>
+     <!-- Genre -->
+     <div class="movie-card__meta-item movie-card__meta-genre">{{ movie.genre }}</div>
+   </div>
+ </ng-template>
+
+</p-card>

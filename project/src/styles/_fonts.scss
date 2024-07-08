@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter Regular'),
+		local('Inter-Regular'),
+		url('../assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter Light'),
+		local('Inter-Light'),
+		url('../assets/fonts/Inter/Inter-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter Medium'),
+		local('Inter-Medium'),
+		url('../assets/fonts/Inter/Inter-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Alumni Sans';
+	src: local('AlumniSans Regular'),
+		local('AlumniSans-Regular'),
+		url('../assets/fonts/AlumniSans/AlumniSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Alumni Sans';
+	src: local('AlumniSans Medium'),
+		local('AlumniSans-Medium'),
+		url('../assets/fonts/AlumniSans/AlumniSans-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Alumni Sans';
+	src: local('AlumniSans Extra Bold'),
+		local('AlumniSans-ExtraBold'),
+		url('../assets/fonts/AlumniSans/AlumniSans-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Alumni Sans';
+	src: local('AlumniSans SemiBold'),
+		local('AlumniSans-SemiBold'),
+		url('../assets/fonts/AlumniSans/AlumniSans-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}

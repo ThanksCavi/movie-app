@@ -1,0 +1,60 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+// Action Buttons
+.action-button {
+	border: none;
+	cursor: pointer;
+	
+	border-radius: 4px;
+	background-color: transparent;
+	color: $light;
+	
+	// Context Card
+	&--card {
+		padding: 0.25em;
+		width: 1.5em;
+
+		&:not(:last-child) {
+			margin-right: 0.35em;
+		}
+
+		// Hover
+		&:hover {
+			color: $accent;
+		}
+	}
+	
+	// Context Details
+	&--details {
+		color: $secondary-text-color;  
+		border: 1px solid $secondary-text-color;
+		transition: 0.3s ease-in-out;
+
+		&:not(:last-child) {
+			margin-right: 12px;
+		}
+	
+		// Hover
+		&:hover {
+			color: $light;
+			background: rgba($light, 0.1);
+		}
+	}
+	
+	// Active
+	&--active {
+		color: $light;
+	}
+
+	// Button Favourite
+	&--favourite {
+		/*  */
+	}
+
+	// Button Watchlist
+	&--watchlist {
+		/*   */
+	}
+}
+  

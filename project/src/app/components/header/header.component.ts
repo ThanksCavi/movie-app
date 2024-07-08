@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [RouterModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent { }
+export class HeaderComponent {
+  @Output() public toggleSidebar = new EventEmitter<void>();
+
+  public onToggleSidebar() {
+    this.toggleSidebar.emit();
+  }
+}

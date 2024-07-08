@@ -1,5 +1,67 @@
-header {
-    width: 100%;
-    height: 60px;
-    background: #000;
+@import "../../../styles/variables.scss";
+
+.header {
+  background: #111;
+
+  &__container {
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+
+  &__menu__list {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      color: $secondary-text-color;
+      transition: 0.2s ease-in-out;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 4px;
+      transition: 0.2s ease-in-out;
+
+      i {
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        color: $primary-text-color;
+      }
+    }
+
+    .active {
+      a {
+        color: $primary-text-color;
+        background: rgba($light, 0.1);
+      }
+    }
+  }
+
+  &__open-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      color: $secondary-text-color;
+      padding: 10px;
+      margin-left: -10px;
+      border-radius: 4px;
+
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+
+      &:focus,
+      &:hover {
+        color: $primary-text-color;
+        background-color: rgba($light, 0.1);
+      }
+    }
+  }
 }

@@ -1,0 +1,66 @@
+<!-- Movie Details Page -->
+<section class="movie-details">
+  <div class="movie-details__container movie-details__container--header container-small">
+    <div class="movie-details__header">
+      <img
+        [src]="'https://image.tmdb.org/t/p/w500/' + movie.backdrop_path"
+        [alt]="movie.title"
+        class="movie-details__backdrop"
+      />
+      <div class="movie-details__header-content">
+        <h1 class="movie-details__title">{{ movie.title }}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="movie-details__container container-small">
+    <div class="movie-details__content">
+      <div class="movie-details__poster">
+        <img
+          [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path"
+          [alt]="movie.title"
+        />
+      </div>
+      <div class="movie-details__info">
+        <p><strong>Оригінальна назва:</strong> {{ movie.original_title }}</p>
+        <p><strong>Мова:</strong> {{ movie.original_language | uppercase }}</p>
+        <p>
+          <strong>Дата виходу: </strong>
+          {{ movie.release_date | date: 'd MMMM, yyyy':'':'uk' }}
+        </p>
+        <p class="movie-details__vote-count">
+          <strong>Кількість голосів: </strong>
+          <span>{{ movie.vote_count }}</span>
+        </p>
+        <p class="movie-details__rating">
+          <strong>Середня оцінка: </strong>
+          <span>{{ movie.vote_average | RoundPipe: 1 }}</span>
+          <p-rating
+            [(ngModel)]="movie.vote_average"
+            [cancel]="false"
+            readonly="true"
+            [stars]="10"
+          ></p-rating>
+        </p>
+        <p>{{ movie.overview }}</p>
+        <div class="movie-details__button-group">
+          <!-- Favourite / Watchlist Actions -->
+          <app-movie-actions
+            [isFavourite]="isFavourite"
+            [isInWatchlist]="isInWatchlist"
+            [context]="context"
+            [styleContext]="'details'"
+            (favouriteToggled)="toggleFavourite()"
+            (watchlistToggled)="toggleWatchlist()"
+          ></app-movie-actions>
+          <!-- Watched Button -->
+          <p-button
+            label="Дивитися"
+            severity="secondary"
+            icon="pi pi-play"
+            iconPos="right"
+          ></p-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

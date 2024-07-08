@@ -1,0 +1,15 @@
+<!-- Featured Movie -->
+<app-featured-movie></app-featured-movie>
+
+<!-- Title H1 -->
+<h1 class="visually-hidden">Хіти прокату</h1>
+
+<!-- Popular Movies -->
+<section class="movie-section main-section">
+  <div class="container">
+    <app-movie-list
+      [movies]="popularMovies"
+      [title]="'Хіти прокату'"
+    ></app-movie-list>
+  </div>
+</section>

@@ -1,45 +1,9 @@
-<div class="movie-section">
-  <!-- Movies -->
-  <div class="movie-list movie-list__movies">
-    <h2 class="movie-list__title">Вибір для кіноманів</h2>
-    <div class="movie-list__grid">
-      <ng-container *ngFor="let movie of movies">
-        <app-movie-card 
-          [data]="movie" 
-          (addFavourite)="handleAddFavourite(movie)" 
-          (addWatchList)="handleAddWatchList(movie)">
-        </app-movie-card>
-      </ng-container>
-    </div>
-  </div>
-
-  <!-- Favourites -->
-  <div *ngIf="favourites.length" class="movie-list movie-list__favourites">
-    <h2 class="movie-list__title">Улюблене</h2>
-    <div class="movie-list__grid">
-      <ng-container *ngFor="let movie of favourites">
-        <app-movie-card 
-          [data]="movie" 
-          (addFavourite)="handleAddFavourite(movie)" 
-          (addWatchList)="handleAddWatchList(movie)">
-        </app-movie-card>
-      </ng-container>
-    </div>
-  </div>
-
-   <!-- Watchlist -->
-   <div *ngIf="watchList.length" class="movie-list movie-list__watchlist">
-    <h2 class="movie-list__title">Подивитись</h2>
-    <div class="movie-list__grid">
-      <ng-container *ngFor="let movie of watchList">
-        <app-movie-card 
-          [data]="movie" 
-          (addFavourite)="handleAddFavourite(movie)" 
-          (addWatchList)="handleAddWatchList(movie)">
-        </app-movie-card>
-      </ng-container>
-    </div>
+<!-- Movie List -->
+<div class="movie-list__movies">
+  <h2 class="movie-list__title">{{ title }}</h2>
+  <div class="movie-list__grid scroll-container-OFF">
+    @for (movie of movies; track movie.id) {
+      <app-movie-card [movie]="movie" [context]="context"></app-movie-card>
+    }
   </div>
 </div>
-
-

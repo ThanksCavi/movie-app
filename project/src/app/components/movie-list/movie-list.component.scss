@@ -1,15 +1,22 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
 
 .movie-list {
-    width: 90%; // !! Move to Global Container
-    margin: 50px auto; // !! Move to Global Container
+  margin-top: 50px;
+  margin-bottom: 50px;
 
-    &__grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
+  &__title {
+    margin-bottom: 0.65em;
+  }
 
-        &:not(:last-child) {
-            margin-bottom: 40px;
-        }
-    }
+  &__grid {
+    @include grid(5, $media: 480);
+    @include gridMediaQueries(4, $point: 1600, $media: 480);
+    @include gridMediaQueries(3, $point: 1366, $media: 480);
+    @include gridMediaQueries(2, $point: 768, $media: 480);
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba($light, 0.1);
+  }
 }
