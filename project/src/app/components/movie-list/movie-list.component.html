@@ -1,0 +1,9 @@
+<!-- Movie List -->
+<div class="movie-list__movies">
+  <h2 class="movie-list__title">{{ title }}</h2>
+  <div class="movie-list__grid scroll-container-OFF">
+    @for (movie of movies; track movie.id) {
+      <app-movie-card [movie]="movie" [context]="context"></app-movie-card>
+    }
+  </div>
+</div>

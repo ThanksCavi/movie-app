@@ -1,0 +1,43 @@
+<!-- Featured Movie Component -->
+<section class="featured-movie">
+  <div class="featured-movie__container container-small">
+    <!-- Carousel -->
+    <p-carousel
+      [value]="featuredMovies"
+      [numVisible]="1"
+      [circular]="true"
+      [autoplayInterval]="10000"
+      [showNavigators]="false"
+      class="carousel"
+    >
+      <!-- Carousel Item -->
+      <ng-template let-movie pTemplate="item">
+        <!-- Card -->
+        <article class="movie-card-featured" (click)="navigateToDetails(movie.id)">
+          <div class="movie-card__poster">
+            <!-- Image -->
+            <img
+              [src]="'https://image.tmdb.org/t/p/w1280/' + movie.backdrop_path"
+              [alt]="movie.title"
+            />
+
+            <!-- Details -->
+            <div class="movie-card__details">
+              <!-- Title -->
+              <h2 class="movie-card__title">{{ movie.title }}</h2>
+
+              <!-- Overview -->
+              <p class="movie-card__overview">{{ movie.overview }}</p>
+
+              <!-- Rating -->
+              <div class="movie-card__rating module-rating">
+                <i class="pi pi-star-fill"></i>
+                {{ movie.vote_average | RoundPipe : 1 }}
+              </div>
+            </div>
+          </div>
+        </article>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>
